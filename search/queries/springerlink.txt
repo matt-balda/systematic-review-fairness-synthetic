@@ -1,0 +1,29 @@
+## SpringerLink Search String
+## Filters: 2021–2026, English, Articles and Conference Papers
+
+(
+  (
+    "algorithmic bias" OR "bias mitigation" 
+    OR "algorithmic fairness"
+  )
+  AND
+  (
+    "synthetic data" OR "synthetic data generation"
+  )
+  AND
+  (
+    "artificial intelligence"
+    OR "deep learning"
+  )
+  AND
+  (
+    healthcare OR clinical OR "medical data" 
+  )
+)
+
+## Notes:
+## SpringerLink has limited advanced query syntax. Use the above in the main search bar.
+## Filters to apply in the interface:
+## - Date: 2021–2026
+## - Language: English
+## - Content Type: Article, Conference Paper

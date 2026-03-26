@@ -1,0 +1,36 @@
+## Web of Science (WoS) Search String
+## Filters: 2021–2026, English, Article / Proceedings Paper
+
+TS=(
+  (
+    bias* OR "algorithmic bias" OR "bias mitigation"
+    OR fair* OR unfair* OR "algorithmic fairness"
+    OR equity OR inequity
+  )
+  AND
+  (
+    "synthetic data" OR "synthetic dataset"
+    OR "synthetic data generation"
+    OR "simulated data"
+    OR "data synthesis"
+  )
+  AND
+  (
+    "artificial intelligence" OR "deep learning" OR "neural network*"
+    OR algorithm*
+  )
+  AND
+  (
+    clinical OR healthcare
+    OR "medical data" OR "health data"
+    OR "patient data"
+  )
+)
+
+## Filters to apply in the interface:
+## - Publication Years: 2021–2026
+## - Language: English
+## - Document Types: Article, Proceedings Paper
+## - Exclude: Review Article, Editorial Material, Letter, Book Chapter
+##
+## TS = Topic (searches Title, Abstract, Author Keywords, and Keywords Plus)

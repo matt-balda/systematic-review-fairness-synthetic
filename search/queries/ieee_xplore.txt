@@ -1,0 +1,34 @@
+## IEEE Xplore Search String
+## Filters: 2021–2026, English, Journals and Conference Publications
+
+(
+  (
+    bias* OR "algorithmic bias" OR "bias mitigation"
+    OR fair* OR unfair* OR "algorithmic fairness"
+    OR equity OR inequity
+  )
+  AND
+  (
+    "synthetic data" OR "synthetic dataset"
+    OR "synthetic data generation"
+    OR "simulated data"
+    OR "data synthesis"
+  )
+  AND
+  (
+    "artificial intelligence"
+    OR "deep learning" OR "neural network*"
+    OR algorithm*
+  )
+  AND
+  (
+    clinical OR healthcare
+    OR "medical data" OR "health data"
+    OR "patient data"
+  )
+)
+
+## Filters to apply in the interface:
+## - Year: 2021–2026
+## - Content Type: Journals, Conference Publications
+## - Language: English

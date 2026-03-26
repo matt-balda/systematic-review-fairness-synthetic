@@ -1,0 +1,35 @@
+## Scopus Search String
+## Filters: 2021–2026, English, Article / Conference Paper, 
+
+TITLE-ABS-KEY(
+  (
+    bias* OR "algorithmic bias" OR "bias mitigation"
+    OR fair* OR unfair* OR "algorithmic fairness"
+    OR equity OR inequity
+  )
+  AND
+  (
+    "synthetic data" OR "synthetic dataset"
+    OR "synthetic data generation"
+    OR "simulated data"
+    OR "data synthesis"
+  )
+  AND
+  (
+    "artificial intelligence" OR "deep learning" OR "neural network*"
+    OR algorithm*
+  )
+  AND
+  (
+    clinical OR healthcare
+    OR "medical data" OR "health data" OR "patient data"
+  )
+)
+AND PUBYEAR > 2020
+AND PUBYEAR < 2027
+AND ( LIMIT-TO ( LANGUAGE , "English" ) )
+AND ( LIMIT-TO ( DOCTYPE , "ar" ) OR LIMIT-TO ( DOCTYPE , "cp" ) )
+AND ( LIMIT-TO ( SRCTYPE , "j" ) OR LIMIT-TO ( SRCTYPE , "p" ) )
+
+## DOCTYPE ar = Article, cp = Conference Paper
+## Exclude: re (Review), ed (Editorial), le (Letter), no (Note), sh (Short Survey)

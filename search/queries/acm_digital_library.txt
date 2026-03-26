@@ -1,0 +1,42 @@
+## ACM Digital Library Search String
+## Filters: 2021–2026
+
+(
+  (
+    bias OR biases OR biased OR "algorithmic bias" OR "bias mitigation"
+    OR fairness OR fair OR unfair OR "algorithmic fairness"
+    OR equity OR inequity
+  )
+  AND
+  (
+    "synthetic data" OR "synthetic dataset"
+    OR "synthetic data generation"
+    OR "simulated data"
+    OR "data synthesis"
+  )
+  AND
+  (
+    "artificial intelligence" OR
+    OR "deep learning" OR "neural network"
+    OR algorithms
+  )
+  AND
+  (
+    clinical OR healthcare
+    OR "medical data" OR "health data"
+    OR "patient data"
+  )
+)
+
+string in base:
+[[Abstract: bias] OR [Abstract: biases] OR [Abstract: biased] OR [Abstract: "algorithmic bias"] OR [Abstract: "bias mitigation"] OR [Abstract: fairness] OR [Abstract: fair] OR [Abstract: unfair] OR [Abstract: "algorithmic fairness"] OR [Abstract: equity] OR [Abstract: inequity]] 
+AND [[Abstract: "synthetic data"] OR [Abstract: "synthetic dataset"] OR [Abstract: "synthetic data generation"] OR [Abstract: "simulated data"] OR [Abstract: "data synthesis"]] 
+AND [[Abstract: "artificial intelligence"] OR [Abstract: "deep learning"] OR [Abstract: "neural network"] OR [Abstract: algorithms]] 
+AND [[Abstract: clinical] OR [Abstract: healthcare] OR [Abstract: "medical data"] OR [Abstract: "health data"] OR [Abstract: "patient data"]] 
+AND [E-Publication Date: (01/01/2021 TO 03/31/2026)]
+
+## Filters to apply in the interface:
+## - Published: 2021–2026
+##
+## Note: ACM uses double brackets [[ ]] for field-based queries.
+## You can also use the Advanced Search form to fill each concept in separate fields.

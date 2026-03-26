@@ -1,0 +1,42 @@
+## PubMed Search String
+## Filters: in the last 5 years, Full text, English, Humans, Exclude preprints.
+
+(
+  (
+    "Bias"[Mesh]
+    OR bias[tiab]
+    OR biases[tiab]
+    OR biased[tiab]
+    OR "algorithmic bias"[tiab]
+    OR "bias mitigation"[tiab]
+    OR fairness[tiab]
+    OR fair[tiab]
+    OR unfair[tiab]
+    OR "algorithmic fairness"[tiab]
+    OR equity[tiab]
+    OR inequity[tiab]
+  )
+  AND
+  (
+    "synthetic data"[tiab]
+    OR "synthetic dataset"[tiab]
+    OR "synthetic data generation"[tiab]
+    OR "simulated data"[tiab]
+    OR "data synthesis"[tiab]
+  )
+  AND
+  (
+    "Artificial Intelligence"[Mesh]
+    OR algorithms[Mesh]
+    OR "deep learning"[tiab]
+    OR "neural network*"[tiab]
+  )
+  AND
+  (
+    clinical[tiab]
+    OR healthcare[tiab]
+    OR "medical data"[tiab]
+    OR "health data"[tiab]
+    OR "patient data"[tiab]
+  )
+)
