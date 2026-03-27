@@ -96,18 +96,30 @@ def main():
     print("Conexão ao Ollama localhost:11434 : [OK]")
     inc_exc, req_qs = read_protocol()
     
-    system_instruction = f"""You are a senior computer science and health researcher systematic reviewing literature.
-Evaluate the Title and Abstract against the protocol and decide if it MUST BE INCLUDED ('Yes') or EXCLUDED ('No').
-CRITICAL: Reply ONLY with valid JSON exactly matching the scheme below, with no other conversational text.
+    strict_anchor = "A medical study using deep learning methods to generate synthetic healthcare data with the explicit aim of promoting fairness, equity, and mitigating algorithmic bias in predictive models for underrepresented human demographic groups."
+    
+    system_instruction = f"""You are a strict and rigorous senior computer science and health researcher conducting a systematic review.
+Evaluate the Title and Abstract against the protocol and the following STRICT ANCHOR CRITERION:
+'{strict_anchor}'
 
-# Protocol (Inclusion / Exclusion):
+To be INCLUDED ('Yes'), the paper MUST EXPLICITLY:
+1. Use Deep Learning methods (GANs, Diffusion, etc.).
+2. Generate SYNTHETIC healthcare/medical data.
+3. Explicitly aim to promote FAIRNESS, EQUITY, or MITIGATE ALGORITHMIC BIAS, particularly for underrepresented human demographic groups.
+
+If the paper only addresses synthetic data without a clear fairness/bias mitigation goal, or if it only addresses fairness without generating synthetic data, it MUST BE EXCLUDED ('No'). Be extremely rigid. Do not assume or extrapolate.
+
+# Protocol (Inclusion / Exclusion Criteria):
 {inc_exc}
+
+# Research Questions:
+{req_qs}
 
 # Output format schema:
 {{
-  "included": "Yes" or "No" or "Unsure",
-  "reason": "Short reason for exclusion or N/A",
-  "rationale": "One-sentence rationale based on the protocol."
+  "included": "Yes" or "No",
+  "reason": "Identify the missing requirement (e.g., 'No fairness objective' or 'No synthetic data') or 'N/A'",
+  "rationale": "One-sentence rationale based on the strict anchor criterion and exclusion criteria."
 }}
 """
 
