@@ -16,7 +16,7 @@
   )
   AND
   (
-    "artificial intelligence" OR
+    "artificial intelligence"
     OR "deep learning" OR "neural network"
     OR algorithms
   )
