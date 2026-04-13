@@ -13,6 +13,8 @@ This repository contains all materials for a systematic review on the generation
 * SpringerLink
 * ACM Digital Library
 
+**Collection Date:** 2026-03-25
+
 ## Search strategy
 
 See `/search/queries/`
